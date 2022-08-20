@@ -13,4 +13,8 @@ class Restaurant
     @menu_items
   end
 
+  def add_menu_item(menu_item)
+    @menu_items << menu_item
+  end
+
 end

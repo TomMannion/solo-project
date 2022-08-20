@@ -9,4 +9,10 @@ RSpec.describe Restaurant do
     restaurant = Restaurant.new("Restaurant")
     expect(restaurant.menu_items).to eq([])
   end
+  it "should be able to add a menu item" do
+    restaurant = Restaurant.new("Restaurant")
+    pizza = double :fake_item
+    restaurant.add_menu_item(pizza)
+    expect(restaurant.menu_items).to eq([pizza])
+  end
 end
