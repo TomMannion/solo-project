@@ -5,7 +5,7 @@ class OrderFormatting
   end
   def print_order
     @customer.order.each do |menu_item|
-      @io.puts "Pizza - 10.25"
+      @io.puts "#{menu_item.name} - #{menu_item.price}"
     end
   end
   def print_receipt
